@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bottom_home"
+        android:title="@string/bottom_home"
+        android:icon="@drawable/icon_home"/>
+
+    <item android:id="@+id/bottom_rating"
+        android:title="@string/bottom_rating"
+        android:icon="@drawable/icon_rating"/>
+
+
+    <item android:id="@+id/bottom_people"
+        android:title="@string/bottom_people"
+        android:icon="@drawable/icon_account"/>
+</menu>

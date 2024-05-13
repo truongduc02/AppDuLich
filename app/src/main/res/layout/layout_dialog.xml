@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/img_dialog"
+            android:scaleType="centerCrop"
+            android:src="@drawable/anh1"
+            android:layout_width="80dp"
+            android:layout_height="65dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_name_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Du lịch Hàn Quốc muùa Hoa Anh Đào bay VietNam Airlines 5 ngày từ Sài Gòn 2024"/>
+
+            <TextView
+                android:id="@+id/tv_gia_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="86.000.000 đ"
+                android:textColor="@color/primary"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:text="Chọn ngày khởi hành: "
+        android:layout_marginTop="10dp"/>
+    <LinearLayout
+        android:id="@+id/LinearLayoutDateButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/Date1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="27/04/2024"
+            android:background="@drawable/time_dialog"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginRight="4dp"/>
+        <TextView
+            android:id="@+id/tvDate2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="27/04/2024"
+            android:background="@drawable/time_dialog"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"/>
+        <TextView
+            android:id="@+id/tvDate3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="27/04/2024"
+            android:background="@drawable/time_dialog"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_marginLeft="4dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/disciption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lượng"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_tru_dialog"
+                android:src="@drawable/icon_rule"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_soluong_dialog"
+                android:text="1"
+                android:textColor="@color/primary"
+                android:gravity="center"
+                android:layout_weight="4"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/img_cong_dialog"
+                android:src="@drawable/icon_adds"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_themCart_dialog"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cart_view_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Them vao gio hang"
+            android:textColor="#4AA9BC"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/btnmuahang"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_button_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Mua ngay"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4AA9BC"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="#4AA9BC"
+                android:src="@drawable/icon_left" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarctsp"
+                android:layout_width="wrap_content"
+                android:layout_height="?actionBarSize"
+                app:title="Chi tiết sản phẩm"
+                app:titleTextColor="@color/black"
+                tools:ignore="NotSibling" />
+
+            <FrameLayout
+                android:id="@+id/fragmentGioHang"
+                android:layout_width="60dp"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="right"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp">
+
+                <com.nex3z.notificationbadge.NotificationBadge
+                    android:id="@+id/noti_soluong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right" />
+
+                <ImageView
+                    android:id="@+id/img_toCart"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#4AA9BC"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/icon_cart" />
+            </FrameLayout>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp">
+        <LinearLayout
+            android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+            android:layout_below="@+id/layout"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+
+        <ImageView
+            android:id="@+id/img_photo_2"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_name_tour_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            android:text="Du lịch Đà Nẵng - Hội An - Huế mùa Xuân 3 ngày từ Sài Gòn 2024"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_price_tour_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="5.099.000"
+            android:textColor="#4AA9BC"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="Chi tiết sản phẩm"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="Điểm nhấn hành trình"
+            android:textColor="#000000"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="7dp"
+                    android:text="Hành trình :"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="7dp"
+                    android:text="Lịch trình :"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text="Khởi hành :"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text="Vận chuyển :"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_itinerary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:padding="7dp"
+                    android:text="Đà Nẵng - Bà Nà Hills - Ngũ Hành Sơn - Phố cổ Hội An - Đại Nội - Huế"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_schedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:padding="7dp"
+                    android:text="3 ngày 2 đêm"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:padding="7dp"
+                    android:text="02,09,16,23/03/2024"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_vehicles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:padding="7dp"
+                    android:text="Vé máy bay khứ hồi vs Xe du lịch đời mới"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/motaTour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="mo ta"
+                android:layout_margin="5dp"/>
+    </LinearLayout>
+        </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        tools:ignore="InvalidId"
+        android:layout_alignParentBottom="true"
+        android:background="#4AA9BC">
+
+        <TextView
+            android:id="@+id/tv_them_gio_hang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cart_view_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Thêm vào giỏ hàng"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

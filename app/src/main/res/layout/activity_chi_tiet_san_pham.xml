@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#4AA9BC">
+
+            <ImageButton
+
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:background="#4AA9BC"
+                android:src="@drawable/icon_left"
+                android:layout_marginLeft="8dp"/>
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:title="Chi tiết sản phẩm"
+                app:titleTextColor="@color/black"
+                tools:ignore="NotSibling" />
+        </LinearLayout>
+        
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_page_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" />
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/circle_indicator_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"
+                    app:ci_drawable="@drawable/bg_indicator"
+                    />
+
+            </RelativeLayout>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Du lịch Đà Nẵng - Hội An - Huế mùa Xuân 3 ngày từ Sài Gòn 2024"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:padding="7dp"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5.099.000"
+            android:textColor="#4AA9BC"
+            android:padding="7dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết sản phẩm"
+            android:textColor="#000000"
+            android:padding="7dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điểm nhấn hành trình"
+            android:textColor="#000000"
+            android:padding="7dp"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Hành trình :"
+                    android:textColor="#000000"
+                    android:padding="7dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Lịch trình :"
+                    android:textColor="#000000"
+                    android:padding="7dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="12dp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Khởi hành :"
+                    android:textColor="#000000"
+                    android:padding="7dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vận chuyển :"
+                    android:textColor="#000000"
+                    android:padding="7dp"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đà Nẵng - Bà Nà Hills - Ngũ Hành Sơn - Phố cổ Hội An - Đại Nội - Huế"
+                    android:textColor="#000000"
+                    android:padding="7dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="3 ngày 2 đêm"
+                    android:textColor="#000000"
+                    android:padding="7dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02,09,16,23/03/2024"
+                    android:textColor="#000000"
+                    android:padding="7dp"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vé máy bay khứ hồi vs Xe du lịch đời mới"
+                    android:textColor="#000000"
+                    android:padding="7dp"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        tools:ignore="InvalidId"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/cart_view_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Them vao gio hang"
+            android:textColor="#4AA9BC"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/custom_button_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Mua ngay"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
